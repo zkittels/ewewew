@@ -1,18 +1,30 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
-console.log(title)
-let screens = 10;
-console.log(screens)
-let screenPrice = 10;
-console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
-console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+function guessNumber() {
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+  function guess() {
+    const userGuess = prompt('Угадай число от 1 до 100');
+
+    if (userGuess === null) {
+      alert('Игра окончена');
+    } else if (isNaN(+userGuess)) {
+      alert('Введи число!');
+      guess();
+    } else {
+      const guessNumber = +userGuess;
+
+      if (guessNumber === secretNumber) {
+        alert('Поздравляю, Вы угадали!!!');
+      } else if (guessNumber < secretNumber) {
+        alert('Загаданное число больше');
+        guess();
+      } else {
+        alert('Загаданное число меньше');
+        guess();
+      }
+    }
+  }
+
+  guess();
+}
+
+guessNumber();
