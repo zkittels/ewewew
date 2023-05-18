@@ -1,18 +1,27 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
+'use script';
+
+let title = prompt('Как называется ваш проект?')
 console.log(title)
-let screens = 10;
+
+let screens = prompt('Какие типы экранов нужно разработать?', "Простые, Сложные, Интерактивные")
 console.log(screens)
-let screenPrice = 10;
+
+let screenPrice = prompt('Сколько будет стоить данная работа?', "12000")
 console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
+
+let adaptive = prompt('Нужен ли адаптив на сайте?', "true/false")
 console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+
+let service1 = prompt('Какой дополнительный тип услуги нужен?')
+console.log(service1)
+
+let servicePrice1 = prompt('Сколько это будет стоить?')
+console.log(servicePrice1)
+
+let service2 = prompt('Какой дополнительный тип услуги нужен?')
+console.log(service2)
+
+let servicePrice2 = prompt('Сколько это будет стоить?')
+console.log(servicePrice2)
+
+let fullprice = screenPrice + servicePrice1 + servicePrice2
