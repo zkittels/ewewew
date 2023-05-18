@@ -1,18 +1,11 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
-console.log(title)
-let screens = 10;
-console.log(screens)
-let screenPrice = 10;
-console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
-console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+const week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+const currentDate = new Date().getDay();
+for (let i = 0; i < week.length; i++) {
+  if (i === currentDate - 1) {
+    document.write(`<b>${week[i]}</b><br>`);
+  } else if (i === 5 || i === 6) {
+    document.write(`<i>${week[i]}</i><br>`);
+  } else {
+    document.write(`${week[i]}<br>`);
+  }
+}
