@@ -5,9 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="script.js"></script>
+    <script src="js/script.js">
+        alert("Hello World!")
+    </script>
 </head>
 <body>
-    
+    <h1>Калькулятор верстки</h1>
+ <div class="calculator">
+  <div class="screen">
+   <span class="range-value">50%</span>
+   <input type="range" min="0" max="100" value="50" class="rollback">
+   <input type="text" class="total-input" placeholder="Введите сумму">
+   <select class="total-select">
+    <option>USD</option>
+    <option>EUR</option>
+    <option>UAH</option>
+   </select>
+   <button class="screen-btn">+</button>
+  </div>
+  <div class="other-items">
+   <button class="handler_btn percent">%</button>
+   <button class="handler_btn">7</button>
+   <button class="handler_btn">8</button>
+   <button class="handler_btn">9</button>
+   <button class="handler_btn percent">%</button>
+   <button class="handler_btn">4</button>
+   <button class="handler_btn">5</button>
+   <button class="handler_btn">6</button>
+   <button class="handler_btn percent">%</button>
+   <button class="handler_btn">1</button>
+   <button class="handler_btn">2</button>
+   <button class="handler_btn">3</button>
+   <button class="handler_btn percent">%</button>
+   <button class="handler_btn">0</button>
+   <button class="handler_btn">.</button>
+   <button class="handler_btn">C</button>
+  </div>
+  <div class="other-items">
+   <button class="handler_btn number">/</button>
+   <button class="handler_btn number">*</button>
+   <button class="handler_btn number">-</button>
+   <button class="handler_btn number">+</button>
+   <button class="handler_btn number">=</button>
+  </div>
+ </div>
+ <script>
+  // Получить заголовок "Калькулятор верстки"
+  const title = document.getElementsByTagName('h1')[0];
+  // Получить кнопки "Рассчитать" и "Сброс"
+  const buttons = document.getElementsByClassName('handler_btn');
+  // Получить кнопку "+" под выпадающим списком
+  const plusButton = document.querySelector('.screen-btn');
+  // Получить все элементы с классом other-items
+  const itemsPercent = document.querySelectorAll('.other-items .percent');
+  const itemsNumber = document.querySelectorAll('.other-items .number');
+  // Получить input type=range
+  const rangeInput = document.querySelector('.rollback');
+  // Получить span с классом range-value
+  const rangeValue = document.querySelector('.rollback .range-value');
+  // Получить все инпуты с классом total-input
+  const totalInputs = document.getElementsByClassName('total-input');
+  // Получить все блоки с классом screen
+  let screens = document.querySelectorAll('.screen');
+ </script>
+
 </body>
 </html>
