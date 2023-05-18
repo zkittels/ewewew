@@ -1,18 +1,9 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
-console.log(title)
-let screens = 10;
-console.log(screens)
-let screenPrice = 10;
-console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
-console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+const title = document.getElementsByTagName("h1")[0];
+const buttons = document.getElementsByClassName("handler_btn");
+const plusBtn = document.querySelector(".screen-btn");
+const percentItems = document.querySelectorAll(".other-items.percent");
+const numberItems = document.querySelectorAll(".other-items.number");
+const rangeInput = document.querySelector(".rollback input[type='range']");
+const rangeValue = document.querySelector(".rollback .range-value");
+const totalInputs = document.getElementsByClassName("total-input");
+let screens = document.querySelectorAll(".screen");
