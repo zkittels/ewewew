@@ -1,18 +1,14 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
+let title = "Lessons02";
 console.log(title)
-let screens = 10;
-console.log(screens)
-let screenPrice = 10;
-console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
-console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+let screens = "Простые, Сложные, Интерактивные"
+console.log(screens);
+let screenPrice = 10
+console.log(screenPrice);
+let rollback = "20"
+console.log(rollback);
+let fullPrice = "30000"
+console.log(fullPrice);
+let adaptive = console.log(true && false);
+console.log(fullPrice * (rollback/100))
+let str = "screens"
+console.log(str.length)
