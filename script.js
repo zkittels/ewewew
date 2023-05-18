@@ -1,18 +1,26 @@
-let snake_case = 10;
-const width = 11;
-console.log(snake_case)
-alert("Hello world")
-let title = 10;
-console.log(title)
-let screens = 10;
-console.log(screens)
-let screenPrice = 10;
-console.log(screenPrice)
-let rollback = 10;
-console.log(rollback)
-let fullPrice = 10;
-console.log(fullPrice)
-let adaptive = 10;
-console.log(adaptive)
-myVar = Symbol();
-console.log (typeof myVar)
+const getAllServicePrices = function() {
+  let sum = 0;
+  // код для подсчета суммы дополнительных услуг
+  return sum;
+    
+ function getFullPrice(screenPrice) {
+  const allServicePrices = getAllServicePrices();
+  const fullPrice = screenPrice + allServicePrices;
+  return fullPrice;
+}
+
+function getTitle(title) {
+  return title.trim().replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+}
+    const getServicePercentPrices = function() {
+  const servicePrice = getFullPrice(screenPrice);
+  const servicePercentPrice = servicePrice - (servicePrice * (rollbackPercent / 100));
+  return servicePercentPrice;
+}
+    console.log(screens)
+    console.clear();
+showTypeOf(screenPrice);
+showTypeOf(screens);
+console.log(`Для разработки доступны экраны: ${screens}`);
+console.log(getRollbackMessage(rollbackPercent));
+console.log(`Стоимость за вычетом процента отката посреднику: ${getServicePercentPrices()}`);
